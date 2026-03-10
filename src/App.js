@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default function App() {
+ const titulo = "Minha primeira aplicação react";
+ const aula = 4;
+ const boo = true; // Não é possivel Usar
+ const person = {name:"João"}//Não é possivel usar 
+ const link = "https://www.google.com.br/"
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className='content'>{titulo}</div>
+      <p>Aula: {aula}</p>
+      <p>{person.name}</p> {/* Assim pode ser usado*/ }
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        Ir para o Google
+      </a>{/*O link desse jeito pode ser udado*/}
+
+      
+
+
+
+    
     </div>
   );
 }
 
-export default App;
+ 
