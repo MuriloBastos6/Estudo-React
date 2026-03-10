@@ -1,13 +1,58 @@
-body {
+/* Reset CSS Básico */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b85cc;
+  color: #333;
+}
+
+.navbar {
+  height: 20dvh;
+  background-color: #bfc200;
+  display: flex;
+  color: #ffffff;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.titulo{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.home {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  margin-right: 1rem;
+  align-items: center;
+
+}
+
+.create {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.text-main{
+  color: #fff;
+  margin-left: 10rem;
+  margin-top: 2.5rem;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+
 }
