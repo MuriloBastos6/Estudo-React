@@ -1,4 +1,5 @@
 import {useState} from "react";
+import ProdutosList from "./ProdutosList";
 
 export default function Home() {
     const [produtos, setProdutos] = useState([
@@ -27,18 +28,7 @@ export default function Home() {
   return (
     <div>
       <h2 className="text-main">Nossos Produtos</h2>
-      {produtos.map(produto => (
-         <div  className="produtos-preview"  key={produto.id}>
-            <img className="imagens" src={produto.image} alt={produto.name} />
-            <h2>{produto.name}</h2>
-            <p>Saco com:{produto.peso}</p>
-            <p>Código:{produto.cod}</p>
-
-         </div>
-
-
-      ))}
-
+      <ProdutosList produtos={produtos} title="Feijões"/>
     </div>
   );
 
