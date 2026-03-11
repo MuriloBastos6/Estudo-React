@@ -1,15 +1,16 @@
 import React from "react";
 
-function ProdutosList({produtos, title}) {
+function ProdutosList({ produtos, title, handleDelete }) {
   return (
     <div className="produtos-list">
       <h2>{title}</h2>
-      {produtos.map((produto) => (
-        <div className="produtos-preview" key={produto.id}>
-          <img className="imagens" src={produto.image} alt={produto.name} />
-          <h2>{produto.name}</h2>
-          <p>Saco com:{produto.peso}</p>
-          <p>Código:{produto.cod}</p>
+      {produtos.map(({ id, name, image, peso, cod }) => (
+        <div className="produtos-preview" key={id}>
+          <img className="imagens" src={image} alt={name} />
+          <h2>{name}</h2>
+          <p>Saco com:{peso}</p>
+          <p>Código:{cod}</p>
+          <button onClick={() => handleDelete(id)}>Deletar item</button>
         </div>
       ))}
     </div>
