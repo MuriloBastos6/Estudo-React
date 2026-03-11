@@ -28,6 +28,8 @@ export default function Home() {
     },
   ]);
 
+  const [name, setName] = useState("Feijão de corda");
+
   const handleDelete = (id) => {
     const produtoNovo = produtos.filter((produto) => produto.id !== id);
     setProdutos(produtoNovo);
@@ -35,8 +37,8 @@ export default function Home() {
 
   useEffect(() => {
   console.log("useEffect foi executado");
-  console.log(produtos);
-  }, []);
+  console.log(name);
+  }, [name, produtos]);
 
   return (
     <div>
@@ -45,6 +47,9 @@ export default function Home() {
         title="Feijões"
         handleDelete={handleDelete}
       />
+
+      <button onClick={() => setName("Feijão Preto")}>Trocar nome</button>
+      <p>{name}</p>
     </div>
   );
 }
