@@ -38,7 +38,7 @@ export default function Home() {
   useEffect(() => {
   console.log("useEffect foi executado");
   console.log(name);
-  }, [name, produtos]);
+  }, []);
 
   return (
     <div>

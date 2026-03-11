@@ -1,0 +1,26 @@
+{
+    "Products":  [
+     {       
+      "name": "Feijão de corda",
+      "image":"",
+      "peso": "25KG",
+      "cod": 4851,
+      "id": 1,
+      "cat": "Feijao"
+    },
+    {
+      "name": "Feijão de carioca",
+      "peso": "25KG",
+      "cod": 4852,
+      "id": 2,
+      "cat": "Feijão"
+    },
+    {
+      "name": "Feijão Branco",
+      "peso": "25KG",
+      "cod": 4853,
+      "id": 3,
+      "cat": "Feijão"
+    }
+    ]
+}
