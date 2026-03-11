@@ -3,6 +3,7 @@
      {       
       "name": "Feijão de corda",
       "image":"",
+      "preço": "R$ 150,00",
       "peso": "25KG",
       "cod": 4851,
       "id": 1,
@@ -10,6 +11,8 @@
     },
     {
       "name": "Feijão de carioca",
+      "image":"",
+      "preço": "R$ 150,00",
       "peso": "25KG",
       "cod": 4852,
       "id": 2,
@@ -17,6 +20,8 @@
     },
     {
       "name": "Feijão Branco",
+      "image":"",
+      "preço": "R$ 150,00",
       "peso": "25KG",
       "cod": 4853,
       "id": 3,

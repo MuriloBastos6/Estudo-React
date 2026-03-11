@@ -2,54 +2,21 @@ import { useState, useEffect } from "react";
 import ProdutosList from "./ProdutosList";
 
 export default function Home() {
-  const [produtos, setProdutos] = useState([
-    {
-      name: "Feijão de corda",
-      image:
-        "",
-      peso: "25KG",
-      cod: 4851,
-      id: 1,
-      cat: "Feijao",
-    },
-    {
-      name: "Feijão de carioca",
-      peso: "25KG",
-      cod: 4852,
-      id: 2,
-      cat: "Feijão",
-    },
-    {
-      name: "Feijão Branco",
-      peso: "25KG",
-      cod: 4853,
-      id: 3,
-      cat: "Feijão",
-    },
-  ]);
-
-  const [name, setName] = useState("Feijão de corda");
-
-  const handleDelete = (id) => {
-    const produtoNovo = produtos.filter((produto) => produto.id !== id);
-    setProdutos(produtoNovo);
-  };
+  const [produtos, setProdutos] = useState(null);
 
   useEffect(() => {
-  console.log("useEffect foi executado");
-  console.log(name);
+    fetch("http://localhost:8000/Products")
+      .then((res) => res.json())
+      .then((data) => { 
+        setProdutos(data);
+        console.log(data);
+      })
+
   }, []);
 
   return (
     <div>
-      <ProdutosList
-        produtos={produtos}
-        title="Feijões"
-        handleDelete={handleDelete}
-      />
-
-      <button onClick={() => setName("Feijão Preto")}>Trocar nome</button>
-      <p>{name}</p>
+      {produtos && <ProdutosList produtos={produtos} title="Feijões" />}
     </div>
   );
 }
