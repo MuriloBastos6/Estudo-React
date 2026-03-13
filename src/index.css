@@ -106,16 +106,39 @@ h2{
 /* Estilo do Loading da pagina*/
 
 .notch-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
 text-align: center;
 }
 
 .loading-notch {
   animation: spin 0.5s forwards infinite linear;
   font-size: 2rem;
+  color:#fff;
 }
 
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
+}
+
+/*Mensagem de erro*/
+
+.erro-card{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.erro-msg{
+  background-color: #fff;
+  padding: 1rem;
+  color: red;
+  width: 35rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
