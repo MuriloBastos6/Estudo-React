@@ -102,3 +102,20 @@ h2{
     display: flex;
     align-self: start;
 }
+
+/* Estilo do Loading da pagina*/
+
+.notch-container {
+text-align: center;
+}
+
+.loading-notch {
+  animation: spin 0.5s forwards infinite linear;
+  font-size: 2rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

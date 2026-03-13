@@ -1,21 +1,33 @@
 import { useState, useEffect } from "react";
 import ProdutosList from "./ProdutosList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const [produtos, setProdutos] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/Products")
+    setTimeout(() => {
+      
+      fetch("http://localhost:8000/Products")
       .then((res) => res.json())
       .then((data) => { 
         setProdutos(data);
-        console.log(data);
+        setIsLoading(false);
+        
       })
-
+      
+    }, 2000);
   }, []);
 
   return (
     <div>
+      {isLoading && (
+        <div className="notch-container">
+          <FontAwesomeIcon icon={faCircleNotch} className="loading-notch"/>
+        </div>
+      )}
       {produtos && <ProdutosList produtos={produtos} title="Feijões" />}
     </div>
   );
