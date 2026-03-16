@@ -38,7 +38,7 @@ export default function Home() {
           <FontAwesomeIcon icon={faCircleNotch} className="loading-notch" />
         </div>
       )}
-      {produtos && <ProdutosList produtos={produtos} title="Feijões" />}
+      {produtos && <ProdutosList produtos={produtos} title="Promoções" />}
     </div>
   );
 }
