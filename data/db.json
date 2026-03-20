@@ -7,7 +7,8 @@
       "peso": "25KG",
       "cod": 4851,
       "id": 1,
-      "cat": "Feijao"
+      "cat": "Feijao",
+      "descricao": "Feijão de corda de alta qualidade, perfeito para pratos tradicionais e saborosos. Cultivado com cuidado, oferece um sabor autêntico e uma textura macia. Ideal para feijoadas, sopas e outros pratos que exigem um feijão robusto e nutritivo."
     },
     {
       "name": "Feijão de carioca",
@@ -16,7 +17,9 @@
       "peso": "25KG",
       "cod": 4852,
       "id": 2,
-      "cat": "Feijão"
+      "cat": "Feijão",
+      "descricao": "Feijão de carioca de excelente qualidade, ideal para pratos tradicionais e saborosos. Com uma textura cremosa e um sabor rico, é perfeito para feijoadas, sopas e outros pratos que exigem um feijão saboroso e nutritivo."
+
     },
     {
       "name": "Feijão Branco",
@@ -25,7 +28,8 @@
       "peso": "25KG",
       "cod": 4853,
       "id": 3,
-      "cat": "Feijão"
+      "cat": "Feijão",
+      "descricao": "Feijão branco de alta qualidade, perfeito para pratos tradicionais e saborosos. Com uma textura suave e um sabor delicado, é ideal para feijoadas, sopas e outros pratos que exigem um feijão nutritivo e versátil."
     }
     ]
 }

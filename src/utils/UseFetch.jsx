@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const useFetch = () => {
+export const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
@@ -8,7 +8,7 @@ export const useFetch = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch("http://localhost:8000/Products")
+      fetch(url)
         .then((res) => {
             if (!res.ok) 
                 throw Error("Não foi possível carregar os dados");
@@ -24,7 +24,7 @@ export const useFetch = () => {
           setIsLoading(false);
         });
     }, 2000);
-  }, []);
+  }, [url]);
 
   return {data, isLoading, isError, error};
 

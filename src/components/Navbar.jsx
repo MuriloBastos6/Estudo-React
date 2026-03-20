@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+
+
 export default function Navbar() {
   return (
     <nav className="navbar">
       <img
-        src="Logo-Saint-png.png"
+        src="/Logo-Saint-png.png"
         alt="Logo com o simbolo da empresa saint-louis"
       />
       <div className="navbar-escrito">
@@ -11,12 +14,12 @@ export default function Navbar() {
           <span>Bastos</span>
         </h1>
         <div className="links">
-          <a className="home" href="/">
+          <Link className="home" to="/">
+            Home
+          </Link>
+          <Link className="create" to="https://lista-produtos-t.vercel.app/" target="blank">
             Lista Completa
-          </a>
-          <a className="create" href="/create">
-            WhatsApp
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
