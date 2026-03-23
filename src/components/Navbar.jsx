@@ -20,6 +20,9 @@ export default function Navbar() {
           <Link className="create" to="https://lista-produtos-t.vercel.app/" target="blank">
             Lista Completa
           </Link>
+          <Link className="create" to="/adiconarProduto">
+           Adicionar novo produt
+          </Link>
         </div>
       </div>
     </nav>

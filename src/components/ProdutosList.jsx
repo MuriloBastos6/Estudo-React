@@ -10,7 +10,7 @@ function ProdutosList({ produtos, title }) {
           <Link to={`/produtos/${id}`}>
           <img className="imagens" src={image} alt={name} />
           <h2>{name}</h2>
-          <p><span>{preço}</span> Sc: {peso}</p>
+          <p><span>R$ {preço}</span> Sc: {peso}</p>
           <p>Código:{cod}</p></Link>
         </div>
         

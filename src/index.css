@@ -142,21 +142,18 @@ h2 {
 
 /*Mensagem de erro*/
 
-.erro-card {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-}
-
-.erro-msg {
+.error-message {
   background-color: #fff;
+  color: #f00;
   padding: 1rem;
-  color: red;
-  width: 35rem;
   border-radius: 0.5rem;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
+}
+
+.error-message span {
+  color: #f00;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 .descricao{
@@ -201,4 +198,52 @@ h2 {
   100% {
     background-position: 100% 0;
   }
+}
+
+
+/* Formulário para criar novo producto */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 0.125rem;
+  color: #1b1b1b;
+}
+.create button {
+  background: rgb(89, 2, 228);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* criando botão */
+
+.btn{
+  background: rgb(41, 7, 97);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
